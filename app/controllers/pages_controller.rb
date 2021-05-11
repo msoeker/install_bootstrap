@@ -1,10 +1,7 @@
 class PagesController < ApplicationController
-
   def home
-    flash[:notice] = "Logged in successfully"
-    flash[:alert] = "WARNING!"
-  end
-  
-  def about
+    if session[:user_id]
+      @user = User.find_by(id: session[:user_id])
+    end
   end
 end
