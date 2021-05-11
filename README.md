@@ -11,6 +11,17 @@
 # 3. add view folder for sessions and new view for the form with email and password
 # 4. find user by email: in database with params[:email] from the form
 # 5. check if user exists in the database and authenticate with the password from the params. if not present or the password is wrong show a flash msg
-# 6.  
 
 # Part 18 Accessing the Current User
+# 1. create a action set_current_user in the application controller. all other controller inherit from application controller
+# 2. create a new model current.rb with an attribute :user in it
+# 3. add before_action for set_current_user to execute hte action before every other
+# 4. add the Current.user and the logout button to the navbar. left side navigation and right side sessoin related things
+
+# Part 19 Edit Password
+# 1. routes.rb add get request "password" to new passwords controller edit action and patch request to passwords controller and update action
+# 2. create new passwords controller with edit and update action
+# 3. make sure User is logged in before someone can access the passwords controller with a before_action require_user_logged_in! and add it to application controller 
+# 4. add a link_to to passwords edit view with edit_password_path
+# 5. create a edit view and a new folder passwords
+# 6. add a form to the view with 
