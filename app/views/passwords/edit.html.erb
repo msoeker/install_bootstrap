@@ -1,4 +1,4 @@
-<h1>Edit Password</h1>
+<h1>Edit your Password</h1>
 
 <%= form_with model: Current.user, url: edit_password_path do |form| %>
   <% if form.object.errors.any? %>
@@ -17,6 +17,6 @@
     <%= form.password_field :password_confirmation, class: "form-control", placeholder: "repeat new password" %>
   </div>
   <div class="mb-3">
-    <%= form.submit "change password", class: "btn btn-primary"%>
+    <%= form.submit "Save password", class: "btn btn-primary"%>
   </div>
 <% end %>

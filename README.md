@@ -24,4 +24,14 @@
 # 3. make sure User is logged in before someone can access the passwords controller with a before_action require_user_logged_in! and add it to application controller 
 # 4. add a link_to to passwords edit view with edit_password_path
 # 5. create a edit view and a new folder passwords
-# 6. add a form to the view with 
+# 6. add a form to the edit view with password and password_confirmation
+
+# Part 20 Reset Password
+# 1. routes.rb add get and post request get "password/reset", to: "password_resets#new" post "password/reset", to: "password_restes#create"
+# 2. create new PasswordResetsController with new and create action
+# 3. create passwords_resets view with textfield for email and submit button
+# 4. add a link_to to the sign in view with link to the password_reset_path
+# 5. add functunality to the create action in PasswordResetsController to check if user is present and send email if so
+# 6. generate a mailer Password with rails g mailer Passwords
+
+# Part 21 Password Token Mailer
