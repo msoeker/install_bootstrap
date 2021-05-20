@@ -34,4 +34,10 @@
 # 5. add functunality to the create action in PasswordResetsController to check if user is present and send email if so
 # 6. generate a mailer Password with rails g mailer Passwords
 
-# Part 21 Password Token Mailer
+# Part 21 Password Token Mailer 
+# 1. add the params of the user coming from the PaswordResetsController .with method to render the view for this mailer
+# 2. generate a uniqe token for the user to change only their password give it a purpose and expires_in
+# 3. 
+# 4.
+
+# Part 22 Password Reset Update
